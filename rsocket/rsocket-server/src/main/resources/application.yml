@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: rsocket-server
+
+  rsocket:
+    server:
+      port: 5200
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost/rinvest
+    username: postgres
+    password: root

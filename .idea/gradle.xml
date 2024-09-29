@@ -9,6 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/rsocket" />
+            <option value="$PROJECT_DIR$/rsocket/rsocket-client" />
+            <option value="$PROJECT_DIR$/rsocket/rsocket-server" />
+            <option value="$PROJECT_DIR$/simple-tasks" />
           </set>
         </option>
       </GradleProjectSettings>
