@@ -30,7 +30,6 @@ class StockController(
 
     @MessageMapping("add")
     suspend fun addStock(stock: Stock): Stock {
-        println(stock)
         return stockRepository.save(stock)
     }
 

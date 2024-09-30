@@ -33,7 +33,6 @@ class RequestResponseController(
 
     @PostMapping("/stocks")
     fun addStock(@RequestBody stock: Stock): Mono<Stock> {
-        println(stock)
         return rSocketRequester
             .route("api.stocks.add")
             .data(stock)
