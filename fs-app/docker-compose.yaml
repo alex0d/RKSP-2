@@ -1,0 +1,55 @@
+services:
+  mongodb:
+    image: 'mongo:latest'
+    environment:
+      MONGO_INITDB_DATABASE: fs-app-database
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret
+    volumes:
+        - mongodb-data:/data/db
+
+  fs-spring1:
+    image: 'fs-spring'
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://root:secret@mongodb:27017
+
+  fs-spring2:
+    image: 'fs-spring'
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://root:secret@mongodb:27017
+
+  fs-spring3:
+    image: 'fs-spring'
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://root:secret@mongodb:27017
+
+  fs-spring4:
+    image: 'fs-spring'
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://root:secret@mongodb:27017
+
+  fs-react:
+    build:
+      context: ./fs-react
+    ports:
+      - '80:80'
+
+  nginx:
+    image: 'nginx:1.27.2-alpine'
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - '8080:8080'
+    depends_on:
+      - fs-react
+
+volumes:
+    mongodb-data:

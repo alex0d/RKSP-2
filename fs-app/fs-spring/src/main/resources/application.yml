@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: fs-spring
+
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI}
+      authentication-database: admin
+      database: fs-app-database
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 500MB
