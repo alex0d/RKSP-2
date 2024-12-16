@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: investment-server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: investment-server
+  template:
+    metadata:
+      labels:
+        app: investment-server
+    spec:
+      containers:
+        - name: investment-server
+          image: alex0d/investment-server:v1
+          ports:
+            - containerPort: 8082
+          imagePullPolicy: Always
