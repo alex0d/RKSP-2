@@ -5,6 +5,14 @@ plugins {
 rootProject.name = "RKSP2"
 
 include("simple-tasks")
+
 include("rsocket:rsocket-server")
 include("rsocket:rsocket-client")
+
 include("fs-app:fs-spring")
+
+include("microservices:config-server")
+include("microservices:eureka-server")
+include("microservices:gateway-server")
+include("microservices:auth-service")
+include("microservices:investment-service")

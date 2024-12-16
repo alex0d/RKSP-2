@@ -4,19 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="093a6867-d0cb-4e75-85cf-05475d4564d2" name="Changes" comment="Remove debug output">
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/src/api/fileApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/src/components/DropZone.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/src/components/FileList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/src/components/FileManagement.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/src/constants/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-react/src/types/file.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-spring/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-spring/src/main/kotlin/ru/alex0d/fsspring/DownloadableFileDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/fs-spring/src/main/kotlin/ru/alex0d/fsspring/MultipartController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fs-app/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="093a6867-d0cb-4e75-85cf-05475d4564d2" name="Changes" comment="Add practice 6">
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/config/SecurityConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/controller/AuthController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/dto/AuthDtos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/model/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/repository/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/service/AuthService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/auth-service/src/main/kotlin/ru/alex0d/authservice/service/JwtService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/eureka-server/src/main/kotlin/ru/alex0d/eurekaserver/EurekaHealthCheck.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/gateway-server/src/main/kotlin/ru/alex0d/gatewayserver/config/CorsConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/gateway-server/src/main/kotlin/ru/alex0d/gatewayserver/config/LoggingFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/gateway-server/src/main/kotlin/ru/alex0d/gatewayserver/config/SecurityConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/gateway-server/src/main/kotlin/ru/alex0d/gatewayserver/controller/HealthController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/auth/JwtAuthFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/auth/UserAuthenticationToken.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/auth/UserPrincipal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/client/NotificationClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/config/SecurityConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/config/StocksInitializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/controller/InvestmentController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/dto/NotificationRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/dto/StockDtos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/mapper/NotificationMessageMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/mapper/PortfolioMappers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/model/Portfolio.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/model/PortfolioStock.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/model/Stock.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/repository/PortfolioRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/repository/StockRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/service/InvestmentService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/investment-service/src/main/kotlin/ru/alex0d/investmentservice/service/JwtService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
@@ -43,12 +61,44 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/microservices/config-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/microservices/auth-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="RKSP2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RKSP2" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RKSP2" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+                <item name="auth-service" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RKSP2" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+                <item name="auth-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RKSP2" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+                <item name="auth-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -61,12 +111,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="Dockerfile" />
+        <option value="Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -111,8 +163,11 @@
     &quot;Docker.fs-app/docker-compose.yaml.nginx: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.fs-app/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build RKSP2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build gateway-server.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build rsocket.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RKSP2:microservices:auth-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RKSP2:microservices:config-server [bootJar].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.StockControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.StockControllerTest.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
@@ -137,8 +192,14 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.FsApp.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.FsSpringApp.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServerApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.InvestmentServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.RSocketApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.RSocketClient.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.RSocketServer (1).executor&quot;: &quot;Run&quot;,
@@ -150,15 +211,18 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/RKSP2/sample-directory&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexey/Downloads/Telegram Desktop/rksp-prac-5/rksp-prac-5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.35517243&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.scala.settings.sections.PerformanceSettingsSectionConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Projects\\RKSP2\\fs-app\\fs-react\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -175,14 +239,20 @@
       <recent name="D:\Projects\RKSP2\src\main\kotlin\practice1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\RKSP2\microservices" />
       <recent name="D:\Projects\RKSP2\fs-app" />
       <recent name="D:\Projects\RKSP2\.idea" />
       <recent name="D:\Projects\RKSP2" />
       <recent name="D:\Projects\RKSP2\rsocket" />
-      <recent name="D:\Projects\RKSP2\simple-tasks\src\main\kotlin\ru\alex0d" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ru.alex0d.investmentservice.mapper" />
+      <recent name="ru.alex0d.investmentservice.auth" />
+      <recent name="ru.alex0d.investmentservice.repository" />
+      <recent name="ru.alex0d.gatewayserver.config" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.alex0d.rsocketserver.controller" />
@@ -195,10 +265,95 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.fs-app/docker-compose.yaml.nginx: Compose Deployment">
-    <configuration name="Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.alex0d.rksp2.practice1.Task1Kt" />
-      <module name="RKSP2.simple-tasks.main" />
+  <component name="RunManager" selected="Spring Boot.InvestmentServiceApplication">
+    <configuration name="RKSP2:microservices:auth-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/auth-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RKSP2:microservices:config-server [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/config-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RKSP2.microservices.auth-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.alex0d.authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RKSP2.microservices.config-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.alex0d.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RKSP2.microservices.eureka-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.alex0d.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FsSpringApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RKSP2.fs-app.fs-spring.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.alex0d.fsspring.FsSpringApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="RKSP2.microservices.gateway-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.alex0d.gatewayserver.GatewayServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.alex0d.gatewayserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvestmentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RKSP2.microservices.investment-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.alex0d.investmentservice.InvestmentServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,32 +386,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="fs-app/docker-compose.yaml.fs-react: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="fs-react" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="fs-app/docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="fs-app/docker-compose.yaml.fs-spring: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="fs-spring" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="fs-app/docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="fs-app/docker-compose.yaml.nginx: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -282,31 +411,28 @@
     </configuration>
     <list>
       <item itemvalue="Docker.fs-app/docker-compose.yaml: Compose Deployment" />
-      <item itemvalue="Docker.fs-app/docker-compose.yaml.fs-react: Compose Deployment" />
-      <item itemvalue="Docker.fs-app/docker-compose.yaml.fs-spring: Compose Deployment" />
       <item itemvalue="Docker.fs-app/docker-compose.yaml.nginx: Compose Deployment" />
-      <item itemvalue="Kotlin.Task1Kt" />
+      <item itemvalue="Gradle.RKSP2:microservices:auth-service [build]" />
+      <item itemvalue="Gradle.RKSP2:microservices:config-server [bootJar]" />
       <item itemvalue="npm.start" />
+      <item itemvalue="Spring Boot.InvestmentServiceApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.FsSpringApp" />
       <item itemvalue="Spring Boot.RSocketClient" />
       <item itemvalue="Spring Boot.RSocketServer" />
+      <item itemvalue="Spring Boot.GatewayServerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.fs-app/docker-compose.yaml.nginx: Compose Deployment" />
-        <item itemvalue="Docker.fs-app/docker-compose.yaml.fs-react: Compose Deployment" />
+        <item itemvalue="Spring Boot.GatewayServerApplication" />
+        <item itemvalue="Gradle.RKSP2:microservices:auth-service [build]" />
+        <item itemvalue="Gradle.RKSP2:microservices:config-server [bootJar]" />
         <item itemvalue="Docker.fs-app/docker-compose.yaml: Compose Deployment" />
-        <item itemvalue="Kotlin.Task1Kt" />
-        <item itemvalue="Docker.fs-app/docker-compose.yaml.fs-spring: Compose Deployment" />
+        <item itemvalue="Docker.fs-app/docker-compose.yaml.nginx: Compose Deployment" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -337,7 +463,23 @@
       <workItem from="1728846619430" duration="8984000" />
       <workItem from="1728905054954" duration="513000" />
       <workItem from="1729150366794" duration="8000" />
-      <workItem from="1731184215170" duration="7375000" />
+      <workItem from="1731184215170" duration="9021000" />
+      <workItem from="1731252234261" duration="71000" />
+      <workItem from="1731253758138" duration="1492000" />
+      <workItem from="1731273750794" duration="994000" />
+      <workItem from="1731281376561" duration="646000" />
+      <workItem from="1731309523787" duration="408000" />
+      <workItem from="1732574191517" duration="109000" />
+      <workItem from="1732574419957" duration="439000" />
+      <workItem from="1733409926218" duration="53000" />
+      <workItem from="1733409981516" duration="72000" />
+      <workItem from="1733410075035" duration="628000" />
+      <workItem from="1733772217410" duration="6000" />
+      <workItem from="1734285493817" duration="4232000" />
+      <workItem from="1734290199861" duration="5387000" />
+      <workItem from="1734295681537" duration="3388000" />
+      <workItem from="1734299253024" duration="4444000" />
+      <workItem from="1734303778748" duration="3323000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -379,7 +521,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727709781817</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add practice 5">
+      <option name="closed" value="true" />
+      <created>1731195051276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731195051278</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add practice 6">
+      <option name="closed" value="true" />
+      <created>1731273889356</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731273889356</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +559,9 @@
     <MESSAGE value="Add Practice 3" />
     <MESSAGE value="Add practice 4" />
     <MESSAGE value="Remove debug output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove debug output" />
+    <MESSAGE value="Add practice 5" />
+    <MESSAGE value="Add practice 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add practice 6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

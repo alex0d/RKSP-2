@@ -11,6 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/fs-app" />
             <option value="$PROJECT_DIR$/fs-app/fs-spring" />
+            <option value="$PROJECT_DIR$/microservices" />
+            <option value="$PROJECT_DIR$/microservices/auth-service" />
+            <option value="$PROJECT_DIR$/microservices/config-server" />
+            <option value="$PROJECT_DIR$/microservices/eureka-server" />
+            <option value="$PROJECT_DIR$/microservices/gateway-server" />
+            <option value="$PROJECT_DIR$/microservices/investment-service" />
             <option value="$PROJECT_DIR$/rsocket" />
             <option value="$PROJECT_DIR$/rsocket/rsocket-client" />
             <option value="$PROJECT_DIR$/rsocket/rsocket-server" />
