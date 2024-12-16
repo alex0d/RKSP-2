@@ -7,7 +7,7 @@ spring:
   config:
     import: "optional:configserver:http://config-server:8888"
   datasource:
-    url: jdbc:postgresql://postgres-investment:5432/investment_db
+    url: jdbc:postgresql://investment-db:5432/investment_db
     username: postgres
     password: postgres
   jpa:

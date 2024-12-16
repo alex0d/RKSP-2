@@ -5,16 +5,16 @@ spring:
   application:
     name: eureka-server
   config:
-    import: "optional:configserver:http://localhost:8888"
+    import: "optional:configserver:http://config-server:8888"
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-server
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://eureka-server:${server.port}/eureka/
   server:
     renewalPercentThreshold: 0.85
     enableSelfPreservation: false

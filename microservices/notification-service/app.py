@@ -14,10 +14,10 @@ FLASK_PORT = 5000
 
 # Initialize Eureka Client
 eureka_client.init(
-    eureka_server="http://localhost:8761/eureka",  # URL вашего Eureka сервера
+    eureka_server="http://eureka-server:8761/eureka",  # URL вашего Eureka сервера
     app_name="notification-service",             # Название приложения
     instance_port=FLASK_PORT,                     # Порт текущего микросервиса
-    instance_host="localhost"
+    instance_host="notification-server"
 )
 
 @app.route("/api/notifications/send", methods=["POST"])

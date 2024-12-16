@@ -1,0 +1,44 @@
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+
+  auth-db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: auth_db
+
+  config-server:
+    build:
+      context: ./config-server
+      dockerfile: Dockerfile
+
+  eureka-server:
+    build:
+      context: ./eureka-server
+      dockerfile: Dockerfile
+
+  gateway-server:
+    build:
+      context: ./gateway-server
+      dockerfile: Dockerfile
+
+  investment-service:
+    build:
+      context: ./investment-service
+      dockerfile: Dockerfile
+
+  investment-db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: investments_db
+
+  notification-service:
+    build:
+      context: ./notification-service
+      dockerfile: Dockerfile

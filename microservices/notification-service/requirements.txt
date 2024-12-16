@@ -1,0 +1,4 @@
+flask
+python-telegram-bot
+flask-cors
+py-eureka-client
