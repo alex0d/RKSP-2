@@ -25,6 +25,8 @@ services:
     build:
       context: ./gateway-server
       dockerfile: Dockerfile
+    ports:
+      - 8080:8080
 
   investment-service:
     build:
@@ -36,7 +38,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: investments_db
+      POSTGRES_DB: investment_db
 
   notification-service:
     build:
